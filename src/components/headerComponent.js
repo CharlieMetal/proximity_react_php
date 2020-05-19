@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const headerComponent = props => {
+const HeaderComponent = props => {
     return (
         <div>
             
@@ -9,8 +9,8 @@ const headerComponent = props => {
     );
 };
 
-headerComponent.propTypes = {
+HeaderComponent.propTypes = {
     
 };
 
-export default headerComponent;
+export default HeaderComponent;

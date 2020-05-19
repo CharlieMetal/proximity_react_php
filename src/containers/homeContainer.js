@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import assetsListComponent from '../components/assetsListComponent';
+import { connect } from 'react-redux';
+
+import HeaderComponent from './../components/HeaderComponent';
+import AssetsListComponent from '../components/AssetsListComponent';
+import FooterComponent from './../components/FooterComponent';
 
 class homeContainer extends Component {
     render() {
         return (
-            <assetsListComponent></assetsListComponent>
+            <div>
+                <HeaderComponent></HeaderComponent>
+                <AssetsListComponent></AssetsListComponent>
+                <FooterComponent></FooterComponent>
+            </div>
         );
     }
 }
@@ -14,4 +22,4 @@ homeContainer.propTypes = {
 
 };
 
-export default homeContainer;
+export default connect({}, {})(homeContainer);

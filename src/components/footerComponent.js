@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const footerComponent = props => {
+const FooterComponent = props => {
     return (
         <div>
             
@@ -9,8 +9,8 @@ const footerComponent = props => {
     );
 };
 
-footerComponent.propTypes = {
+FooterComponent.propTypes = {
     
 };
 
-export default footerComponent;
+export default FooterComponent;

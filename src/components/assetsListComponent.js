@@ -1,26 +1,23 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux'
+import { Container } from '@material-ui/core';
 
-class assetsListComponent extends Component {
+class AssetsListComponent extends Component {
     render() {
         return (
             <div>
-                AssetsList
+                <Container maxWidth="lg">
+                    <h1>TESTING TEST</h1>
+                </Container>
+                
             </div>
         );
     }
 }
 
-assetsListComponent.propTypes = {
+AssetsListComponent.propTypes = {
 
 };
-const mapStateToProps = (state /*, ownProps*/) => {
-    return {
-      var: state,
-    }
-};
+
   
-const mapDispatchToProps = { };
-  
-export default connect(mapStateToProps, mapDispatchToProps)(assetsListComponent);
+export default AssetsListComponent;

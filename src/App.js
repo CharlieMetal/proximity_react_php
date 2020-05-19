@@ -1,15 +1,11 @@
 import React from 'react';
-import { Provider } from 'react-redux'
-import store from './store'
-
 import './App.css';
 import homeContainer from './containers/homeContainer';
+import AssetsListComponent from './components/AssetsListComponent';
 
 function App() {
   return (
-    <Provider store={store}>
-      <homeContainer></homeContainer>
-    </Provider>
+  <AssetsListComponent></AssetsListComponent>
   );
 }
 
