@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux'
 
 class assetsListComponent extends Component {
     render() {
@@ -14,5 +15,12 @@ class assetsListComponent extends Component {
 assetsListComponent.propTypes = {
 
 };
-
-export default assetsListComponent;
+const mapStateToProps = (state /*, ownProps*/) => {
+    return {
+      var: state,
+    }
+};
+  
+const mapDispatchToProps = { };
+  
+export default connect(mapStateToProps, mapDispatchToProps)(assetsListComponent);
