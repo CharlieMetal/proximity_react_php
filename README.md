@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## To Start the Project
-Run json-server --watch db.json to get port 3000(require to run json-server) and then run yarn start in port 3001 or available port.
+Run **json-server --watch db.json** to get port 3000(require to run json-server) and then run **yarn start** in port 3001 or available port.
 
 ## Available Scripts
 
