@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Container } from '@material-ui/core';
+import { CSVLink } from "react-csv";
 import MaterialTable from "material-table";
 
 import { forwardRef } from 'react';
@@ -45,6 +46,19 @@ const tableIcons = {
   };
 
 const AssetsListComponent = ({assets}) => {
+    //CSV Export  
+    const headers = [
+        { label: "ID", key: "id" },
+        { label: "Acquisition Date", key: "acquisition_date" },
+        { label: "Name", key: "name" },
+        { label: "Registration Number", key: "registration_number" },
+        { label: "Next Service", key: "next_service" },
+        { label: "Service Type", key: "service_type" },
+        { label: "Service Status", key: "service_status" }                        
+      ];
+       
+      const data = assets;
+      //END
         return (
             <Container className="assets-list-component">
                 <MaterialTable
@@ -62,7 +76,7 @@ const AssetsListComponent = ({assets}) => {
                             color: "#FFFFFF",
                         }
                     },
-                    { title: "Register Number", field: "registration_number", type: "numeric",
+                    { title: "Registration Number", field: "registration_number", type: "numeric",
                         headerStyle: {
                             backgroundColor: '#3F51B5',
                             color: "#FFFFFF",                            
@@ -96,13 +110,15 @@ const AssetsListComponent = ({assets}) => {
                 title="Assets Lists"
                 />
                 <br/>
-                <Button 
-                    variant="contained"
-                    color="secondary"
-                    size="large"
-                    startIcon={<SaveIcon />}>
-                        DOWNLOAD FULL LIST
-                </Button>
+
+                <CSVLink 
+                    data={data}
+                    headers={headers}
+                    className="download-button"
+                    filename={"full-assets-list-xyz.csv"}
+                >
+                Download Full Assets List
+                </CSVLink>                
             </Container>
 
         )
