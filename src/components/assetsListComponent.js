@@ -46,8 +46,8 @@ const tableIcons = {
   };
 
 const AssetsListComponent = ({assets}) => {
-    //CSV Export  
-    const headers = [
+        //CSV Export  
+        const headers = [
         { label: "ID", key: "id" },
         { label: "Acquisition Date", key: "acquisition_date" },
         { label: "Name", key: "name" },
@@ -55,50 +55,37 @@ const AssetsListComponent = ({assets}) => {
         { label: "Next Service", key: "next_service" },
         { label: "Service Type", key: "service_type" },
         { label: "Service Status", key: "service_status" }                        
-      ];
-       
-      const data = assets;
-      //END
+        ];
+
+        const data = assets;
+
+        //Styling Datatable
+        const style = {
+        backgroundColor: '#3F51B5',
+        color: "#FFFFFF",
+        }
         return (
             <Container className="assets-list-component">
                 <MaterialTable
                 icons={tableIcons}
                 columns={[
                     { title: "Acquisition Date", field: "acquisition_date", type: "numeric",
-                        headerStyle: {
-                            backgroundColor: '#3F51B5',
-                            color: "#FFFFFF",                            
-                        }
+                        headerStyle: style
                     },
                     { title: "Name", field: "name",
-                        headerStyle: {
-                            backgroundColor: '#3F51B5',
-                            color: "#FFFFFF",
-                        }
+                        headerStyle: style
                     },
                     { title: "Registration Number", field: "registration_number", type: "numeric",
-                        headerStyle: {
-                            backgroundColor: '#3F51B5',
-                            color: "#FFFFFF",                            
-                        }
+                        headerStyle: style
                     },
                     { title: "Next Service", field: "next_service", type: "numeric",
-                        headerStyle: {
-                            backgroundColor: '#3F51B5',
-                            color: "#FFFFFF",                            
-                        }
+                        headerStyle: style
                     },
                     { title: "Service Type", field: "service_type",
-                        headerStyle: {
-                            backgroundColor: '#3F51B5',
-                            color: "#FFFFFF",                            
-                        }
+                        headerStyle: style
                     },
                     { title: "Service Status", field: "service_status",
-                        headerStyle: {
-                            backgroundColor: '#3F51B5',
-                            color: "#FFFFFF",                            
-                        }                
+                        headerStyle: style              
                     },
 
                 ]}
