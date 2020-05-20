@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
-import homeContainer from './containers/homeContainer';
-import AssetsListComponent from './components/AssetsListComponent';
+import HomeContainer from './containers/HomeContainer';
 
-function App() {
-  return (
-  <AssetsListComponent></AssetsListComponent>
-  );
+class App extends Component {
+  render(){
+    return (
+      <HomeContainer></HomeContainer>
+    )
+  }
 }
 
 export default App;

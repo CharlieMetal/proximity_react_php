@@ -1,19 +1,365 @@
 {
-  "posts": [
+  "assets": 
+  [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "acquisition_date": "2015-04-16",
+      "name": "Carga Liviana",
+      "registration_number": "5699",
+      "next_service": "7",
+      "service_type": "Cambios de Llantas",
+      "service_status": "Pendiente"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+      "id": 2,
+      "acquisition_date": "2016-05-24",
+      "name": "Carga Liviana",
+      "registration_number": "6589",
+      "next_service": "15",
+      "service_type": "Cambios de Llantas",
+      "service_status": "Pendiente"
+    },
+    {
+      "id": 3,
+      "acquisition_date": "2016-05-13",
+      "name": "Autobus",
+      "registration_number": "6589",
+      "next_service": "1",
+      "service_type": "Cambios de Llantas",
+      "service_status": "Pendiente"
+    },
+    {
+      "id": 4,
+      "acquisition_date": "2016-06-01",
+      "name": "Automóvil",
+      "registration_number": "7849",
+      "next_service": "7",
+      "service_type": "Retoque de pintura",
+      "service_status": "Realizado"
+    },
+    {
+      "id": 5,
+      "acquisition_date": "2016-06-25",
+      "name": "Carga Liviana",
+      "registration_number": "1937",
+      "next_service": "7",
+      "service_type": "Retoque de pintura",
+      "service_status": "Realizado"
+    },
+    {
+      "id": 6,
+      "acquisition_date": "2016-06-29",
+      "name": "Automóvil",
+      "registration_number": "2981",
+      "next_service": "3",
+      "service_type": "Arreglo motor",
+      "service_status": "Por-realizar"
+    },
+    {
+      "id": 7,
+      "acquisition_date": "2016-06-12",
+      "name": "Automóvil",
+      "registration_number": "5698",
+      "next_service": "3",
+      "service_type": "Arreglo motor",
+      "service_status": "Por-realizar"
+    }, 
+    {
+      "id": 8,
+      "acquisition_date": "2015-05-05",
+      "name": "Carga Liviana",
+      "registration_number": "9090",
+      "next_service": "7",
+      "service_type": "Cambios de Llantas",
+      "service_status": "Realizado"
+    },
+    {
+      "id": 9,
+      "acquisition_date": "2015-05-16",
+      "name": "Carga Pesada",
+      "registration_number": "1352",
+      "next_service": "12",
+      "service_type": "Retoque de pintura",
+      "service_status": "Por-realizar"
+    },
+    {
+      "id": 10,
+      "acquisition_date": "2015-03-16",
+      "name": "Automóvil",
+      "registration_number": "1213",
+      "next_service": "8",
+      "service_type": "Cambios de Llantas",
+      "service_status": "Por-realizar"
+    },
+    {
+      "id": 11,
+      "acquisition_date": "2015-03-18",
+      "name": "Carga Pesada",
+      "registration_number": "5698",
+      "next_service": "8",
+      "service_type": "Arreglo motor",
+      "service_status": "Pendiente"
+    },
+    {
+      "id": 12,
+      "acquisition_date": "2016-03-25",
+      "name": "Carga Pesada",
+      "registration_number": "8668",
+      "next_service": "13",
+      "service_type": "Overhall",
+      "service_status": "Pendiente"
+    },
+    {
+      "id": 13,
+      "acquisition_date": "2016-09-11",
+      "name": "Busetas",
+      "registration_number": "2334",
+      "next_service": "32",
+      "service_type": "Cambios de Llantas",
+      "service_status": "Realizado"
+    },
+    {
+      "id": 14,
+      "acquisition_date": "2016-09-11",
+      "name": "Carga Pesada",
+      "registration_number": "1001",
+      "next_service": "23",
+      "service_type": "Overhall",
+      "service_status": "Por-realizar"
+    },
+    {
+      "id": 15,
+      "acquisition_date": "2017-09-23",
+      "name": "Carga Pesada",
+      "registration_number": "1290",
+      "next_service": "14",
+      "service_type": "Cambio de Luces",
+      "service_status": "Pendiente"
+    },
+    {
+      "id": 16,
+      "acquisition_date": "2017-09-23",
+      "name": "Busetas",
+      "registration_number": "2356",
+      "next_service": "7",
+      "service_type": "Cambio de Luces",
+      "service_status": "Por-realizar"
+    },
+    {
+      "id": 17,
+      "acquisition_date": "2017-05-15",
+      "name": "Busetas",
+      "registration_number": "1469",
+      "next_service": "8",
+      "service_type": "Cambios de Llantas",
+      "service_status": "Por-realizar"
+    },
+    {
+      "id": 18,
+      "acquisition_date": "2017-05-15",
+      "name": "Automóvil",
+      "registration_number": "8264",
+      "next_service": "9",
+      "service_type": "Cambios de Llantas",
+      "service_status": "Realizado"
+    },
+    {
+      "id": 19,
+      "acquisition_date": "2017-04-15",
+      "name": "Automóvil",
+      "registration_number": "1092",
+      "next_service": "7",
+      "service_type": "Retoque de pintura",
+      "service_status": "Realizado"
+    },
+    {
+      "id": 20,
+      "acquisition_date": "2017-03-15",
+      "name": "Busetas",
+      "registration_number": "2387",
+      "next_service": "9",
+      "service_type": "Cambios de Llantas",
+      "service_status": "Realizado"
+    },
+    {
+      "id": 21,
+      "acquisition_date": "2017-03-12",
+      "name": "Automóvil",
+      "registration_number": "1092",
+      "next_service": "23",
+      "service_type": "Retoque de pintura",
+      "service_status": "Pendiente"
+    },
+    {
+      "id": 22,
+      "acquisition_date": "2017-03-13",
+      "name": "Automóvil",
+      "registration_number": "2455",
+      "next_service": "12",
+      "service_type": "Retoque de pintura",
+      "service_status": "Pendiente"
+    },
+    {
+      "id": 23,
+      "acquisition_date": "2017-03-13",
+      "name": "Busetas",
+      "registration_number": "5556",
+      "next_service": "12",
+      "service_type": "Cambio de Luces",
+      "service_status": "Realizado"
+    },
+    {
+      "id": 24,
+      "acquisition_date": "2017-05-16",
+      "name": "Busetas",
+      "registration_number": "9089",
+      "next_service": "4",
+      "service_type": "Cambio de Luces",
+      "service_status": "Pendiente"
+    },
+    {
+      "id": 25,
+      "acquisition_date": "2017-06-23",
+      "name": "Carga Pesada",
+      "registration_number": "6006",
+      "next_service": "3",
+      "service_type": "Cambios de Llantas",
+      "service_status": "Pendiente"
+    },
+    {
+      "id": 26,
+      "acquisition_date": "2019-06-16",
+      "name": "Busetas",
+      "registration_number": "3277",
+      "next_service": "35",
+      "service_type": "Cambios de Llantas",
+      "service_status": "Realizado"
+    },
+    {
+      "id": 27,
+      "acquisition_date": "2019-06-16",
+      "name": "Automóvil",
+      "registration_number": "5988",
+      "next_service": "35",
+      "service_type": "Cambios de Llantas",
+      "service_status": "Realizado"
+    },
+    {
+      "id": 28,
+      "acquisition_date": "2019-08-18",
+      "name": "Autobus",
+      "registration_number": "1198",
+      "next_service": "31",
+      "service_type": "Retoque de pintura",
+      "service_status": "Realizado"
+    },
+    {
+      "id": 29,
+      "acquisition_date": "2019-08-18",
+      "name": "Busetas",
+      "registration_number": "5988",
+      "next_service": "6",
+      "service_type": "Cambio de Luces",
+      "service_status": "Realizado"
+    },
+    {
+      "id": 30,
+      "acquisition_date": "2019-09-18",
+      "name": "Autobus",
+      "registration_number": "8889",
+      "next_service": "6",
+      "service_type": "Retoque de pintura",
+      "service_status": "Pendiente"
+    },
+    {
+      "id": 31,
+      "acquisition_date": "2018-09-18",
+      "name": "Automóvil",
+      "registration_number": "2589",
+      "next_service": "7",
+      "service_type": "Cambio de Luces",
+      "service_status": "Pendiente"
+    },
+    {
+      "id": 32,
+      "acquisition_date": "2018-09-23",
+      "name": "Autobus",
+      "registration_number": "2565",
+      "next_service": "6",
+      "service_type": "Arreglo motor",
+      "service_status": "Pendiente"
+    },
+    {
+      "id": 33,
+      "acquisition_date": "2018-02-18",
+      "name": "Autobus",
+      "registration_number": "2595",
+      "next_service": "17",
+      "service_type": "Retoque de pintura",
+      "service_status": "Realizado"
+    },
+    {
+      "id": 34,
+      "acquisition_date": "2018-05-18",
+      "name": "Automóvil",
+      "registration_number": "7575",
+      "next_service": "17",
+      "service_type": "Overhall",
+      "service_status": "Por-realizar"
+    },
+    {
+      "id": 35,
+      "acquisition_date": "2018-11-19",
+      "name": "Carga Liviana",
+      "registration_number": "7355",
+      "next_service": "9",
+      "service_type": "Arreglo motor",
+      "service_status": "Por-realizar"
+    },
+    {
+      "id": 36,
+      "acquisition_date": "2018-11-21",
+      "name": "Automóvil",
+      "registration_number": "1055",
+      "next_service": "13",
+      "service_type": "Overhall",
+      "service_status": "Pendiente"
+    },
+    {
+      "id": 37,
+      "acquisition_date": "2018-11-21",
+      "name": "Automóvil",
+      "registration_number": "9485",
+      "next_service": "13",
+      "service_type": "Arreglo motor",
+      "service_status": "Pendiente"
+    },
+    {
+      "id": 38,
+      "acquisition_date": "2015-10-22",
+      "name": "Carga Liviana",
+      "registration_number": "9444",
+      "next_service": "1",
+      "service_type": "Arreglo motor",
+      "service_status": "Pendiente"
+    },
+    {
+      "id": 39,
+      "acquisition_date": "2015-09-22",
+      "name": "Autobus",
+      "registration_number": "1299",
+      "next_service": "3",
+      "service_type": "Retoque de pintura",
+      "service_status": "Realizado"
+    },
+    {
+      "id": 40,
+      "acquisition_date": "2015-09-22",
+      "name": "Autobus",
+      "registration_number": "3200",
+      "next_service": "1",
+      "service_type": "Retoque de pintura",
+      "service_status": "Realizado"
+    }                                        
+  ]
 }

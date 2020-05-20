@@ -1,3 +1,1 @@
-const url ="http://localhost:3000/";
-
-export const apiGet = `${url}assets`;
+export const apiGet = (url) => () => fetch(url).then(v => v.json());
