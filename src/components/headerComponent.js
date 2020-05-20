@@ -30,7 +30,7 @@ const HeaderComponent = props => {
                     <MenuIcon />
                 </IconButton>
                 <Typography variant="h6" className={classes.title}>
-                    MENU
+                    Trasportes XYZ
                 </Typography>
                 </Toolbar>
             </AppBar>

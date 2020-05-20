@@ -1,4 +1,11 @@
 @import './variables.scss';
+
 .assets-list-component {
     margin-bottom: 10vh;
+    .MuiTableSortLabel-root {
+        transition: color 1s;
+        :hover {
+            color: $hover-color;
+        }
+    }
 }

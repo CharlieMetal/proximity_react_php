@@ -50,37 +50,37 @@ const AssetsListComponent = ({assets}) => {
                 <MaterialTable
                 icons={tableIcons}
                 columns={[
-                    { title: "Fecha de Adquisición", field: "acquisition_date", type: "numeric",
+                    { title: "Acquisition Date", field: "acquisition_date", type: "numeric",
                         headerStyle: {
                             backgroundColor: '#3F51B5',
                             color: "#FFFFFF",                            
                         }
                     },
-                    { title: "Nombre", field: "name",
+                    { title: "Name", field: "name",
                         headerStyle: {
                             backgroundColor: '#3F51B5',
                             color: "#FFFFFF",
                         }
                     },
-                    { title: "Placa/Registro", field: "registration_number", type: "numeric",
+                    { title: "Register Number", field: "registration_number", type: "numeric",
                         headerStyle: {
                             backgroundColor: '#3F51B5',
                             color: "#FFFFFF",                            
                         }
                     },
-                    { title: "Siguiente Servicio", field: "next_service", type: "numeric",
+                    { title: "Next Service", field: "next_service", type: "numeric",
                         headerStyle: {
                             backgroundColor: '#3F51B5',
                             color: "#FFFFFF",                            
                         }
                     },
-                    { title: "Tipo de Servicio", field: "service_type",
+                    { title: "Service Type", field: "service_type",
                         headerStyle: {
                             backgroundColor: '#3F51B5',
                             color: "#FFFFFF",                            
                         }
                     },
-                    { title: "Estado del Servicio", field: "service_status",
+                    { title: "Service Status", field: "service_status",
                         headerStyle: {
                             backgroundColor: '#3F51B5',
                             color: "#FFFFFF",                            
@@ -93,7 +93,7 @@ const AssetsListComponent = ({assets}) => {
                     exportButton: true,
                   }}
                   
-                title="Transportes XYZ - Activos"
+                title="Assets Lists"
                 />
                 <br/>
                 <Button 
