@@ -1,0 +1,12 @@
+@import './variables.scss';
+.footer-component {
+    width: 100%;
+    background-color: $dark-color;
+    height: 15vh;
+    text-align: center;
+
+        span {
+            color: #FFF;
+            font-weight: 500;
+        }
+}

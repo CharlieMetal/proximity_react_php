@@ -5,6 +5,7 @@ import MaterialTable from "material-table";
 
 import { forwardRef } from 'react';
 
+
 import AddBox from '@material-ui/icons/AddBox';
 import ArrowDownward from '@material-ui/icons/ArrowDownward';
 import Check from '@material-ui/icons/Check';
@@ -20,6 +21,8 @@ import Remove from '@material-ui/icons/Remove';
 import SaveAlt from '@material-ui/icons/SaveAlt';
 import Search from '@material-ui/icons/Search';
 import ViewColumn from '@material-ui/icons/ViewColumn';
+import Button from '@material-ui/core/Button';
+import SaveIcon from '@material-ui/icons/Save';
 
 const tableIcons = {
     Add: forwardRef((props, ref) => <AddBox {...props} ref={ref} />),
@@ -43,25 +46,65 @@ const tableIcons = {
 
 const AssetsListComponent = ({assets}) => {
         return (
-            <Container maxWidth="lg">
+            <Container className="assets-list-component">
                 <MaterialTable
                 icons={tableIcons}
                 columns={[
-                    { title: "Fecha de Adquisición", field: "acquisition_date", type: "numeric"  },
-                    { title: "Nombre", field: "name" },
-                    { title: "Placa/Registro", field: "registration_number", type: "numeric" },
-                    { title: "Siguiente Servicio", field: "next_service", type: "numeric" },
-                    { title: "Tipo de Servicio", field: "service_type" },
-                    { title: "Estado del Servicio", field: "service_status"},
+                    { title: "Fecha de Adquisición", field: "acquisition_date", type: "numeric",
+                        headerStyle: {
+                            backgroundColor: '#3F51B5',
+                            color: "#FFFFFF",                            
+                        }
+                    },
+                    { title: "Nombre", field: "name",
+                        headerStyle: {
+                            backgroundColor: '#3F51B5',
+                            color: "#FFFFFF",
+                        }
+                    },
+                    { title: "Placa/Registro", field: "registration_number", type: "numeric",
+                        headerStyle: {
+                            backgroundColor: '#3F51B5',
+                            color: "#FFFFFF",                            
+                        }
+                    },
+                    { title: "Siguiente Servicio", field: "next_service", type: "numeric",
+                        headerStyle: {
+                            backgroundColor: '#3F51B5',
+                            color: "#FFFFFF",                            
+                        }
+                    },
+                    { title: "Tipo de Servicio", field: "service_type",
+                        headerStyle: {
+                            backgroundColor: '#3F51B5',
+                            color: "#FFFFFF",                            
+                        }
+                    },
+                    { title: "Estado del Servicio", field: "service_status",
+                        headerStyle: {
+                            backgroundColor: '#3F51B5',
+                            color: "#FFFFFF",                            
+                        }                
+                    },
 
                 ]}
                 data={assets}
                 options={{
-                    exportButton: true
+                    exportButton: true,
                   }}
+                  
                 title="Transportes XYZ - Activos"
                 />
-            </Container> 
+                <br/>
+                <Button 
+                    variant="contained"
+                    color="secondary"
+                    size="large"
+                    startIcon={<SaveIcon />}>
+                        DOWNLOAD FULL LIST
+                </Button>
+            </Container>
+
         )
 };
 

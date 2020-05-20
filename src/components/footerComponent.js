@@ -1,16 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 const FooterComponent = props => {
     return (
-        <div>
-            
+        <div className="footer-component">
+            <span>Copyright© 2020</span>            
         </div>
     );
 };
 
-FooterComponent.propTypes = {
-    
-};
 
 export default FooterComponent;
