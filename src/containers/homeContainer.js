@@ -8,20 +8,17 @@ import FooterComponent from '../components/FooterComponent';
 
 import { fetchAssets } from '../actions/fetchAssets';
 import { getAssets } from '../selectors/getAssets';
-import { urlAssets } from './../api/urls';
-
-
 
 class HomeContainer extends Component {
-    componentDidMount(){
-        this.props.fetchAssets();
-        console.log(this.props.assets); 
+    async componentDidMount(){
+        await this.props.fetchAssets();
+        console.log(this.props);
     }
     render() {
         return (
             <div>
                 <HeaderComponent></HeaderComponent>
-                <AssetsListComponent url={urlAssets} assets={this.props.assets}></AssetsListComponent>
+                <AssetsListComponent assets={this.props.assets}></AssetsListComponent>
                 <FooterComponent></FooterComponent>
             </div>
         );

@@ -41,10 +41,26 @@ const tableIcons = {
     ViewColumn: forwardRef((props, ref) => <ViewColumn {...props} ref={ref} />)
   };
 
-const AssetsListComponent = ({assets, url}) => {
+const AssetsListComponent = ({assets}) => {
         return (
             <Container maxWidth="lg">
-                <h1>{url}</h1>
+                <MaterialTable
+                icons={tableIcons}
+                columns={[
+                    { title: "Fecha de Adquisición", field: "acquisition_date", type: "numeric"  },
+                    { title: "Nombre", field: "name" },
+                    { title: "Placa/Registro", field: "registration_number", type: "numeric" },
+                    { title: "Siguiente Servicio", field: "next_service", type: "numeric" },
+                    { title: "Tipo de Servicio", field: "service_type" },
+                    { title: "Estado del Servicio", field: "service_status"},
+
+                ]}
+                data={assets}
+                options={{
+                    exportButton: true
+                  }}
+                title="Transportes XYZ - Activos"
+                />
             </Container> 
         )
 };
