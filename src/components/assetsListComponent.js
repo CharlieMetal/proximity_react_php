@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Container } from '@material-ui/core';
 import { CSVLink } from "react-csv";
@@ -22,8 +22,6 @@ import Remove from '@material-ui/icons/Remove';
 import SaveAlt from '@material-ui/icons/SaveAlt';
 import Search from '@material-ui/icons/Search';
 import ViewColumn from '@material-ui/icons/ViewColumn';
-import Button from '@material-ui/core/Button';
-import SaveIcon from '@material-ui/icons/Save';
 
 const tableIcons = {
     Add: forwardRef((props, ref) => <AddBox {...props} ref={ref} />),
@@ -57,48 +55,34 @@ const AssetsListComponent = ({assets}) => {
         { label: "Service Status", key: "service_status" }                        
       ];
        
-      const data = assets;
-      //END
+      const data = assets; 
+      // Style DataTable
+      const styleObj = {
+        backgroundColor: '#3F51B5',
+        color: "#FFFFFF",                            
+      }; 
         return (
             <Container className="assets-list-component">
                 <MaterialTable
                 icons={tableIcons}
                 columns={[
                     { title: "Acquisition Date", field: "acquisition_date", type: "numeric",
-                        headerStyle: {
-                            backgroundColor: '#3F51B5',
-                            color: "#FFFFFF",                            
-                        }
+                        headerStyle: styleObj
                     },
                     { title: "Name", field: "name",
-                        headerStyle: {
-                            backgroundColor: '#3F51B5',
-                            color: "#FFFFFF",
-                        }
+                        headerStyle: styleObj
                     },
                     { title: "Registration Number", field: "registration_number", type: "numeric",
-                        headerStyle: {
-                            backgroundColor: '#3F51B5',
-                            color: "#FFFFFF",                            
-                        }
+                        headerStyle: styleObj
                     },
                     { title: "Next Service", field: "next_service", type: "numeric",
-                        headerStyle: {
-                            backgroundColor: '#3F51B5',
-                            color: "#FFFFFF",                            
-                        }
+                        headerStyle: styleObj
                     },
                     { title: "Service Type", field: "service_type",
-                        headerStyle: {
-                            backgroundColor: '#3F51B5',
-                            color: "#FFFFFF",                            
-                        }
+                        headerStyle: styleObj
                     },
                     { title: "Service Status", field: "service_status",
-                        headerStyle: {
-                            backgroundColor: '#3F51B5',
-                            color: "#FFFFFF",                            
-                        }                
+                        headerStyle: styleObj               
                     },
 
                 ]}
