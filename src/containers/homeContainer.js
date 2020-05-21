@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import HeaderComponent from '../components/HeaderComponent';
-import AssetsListComponent from '../components/AssetsListComponent';
+import AssetsListComponent from '../components/assetsListComponent';
 import FooterComponent from '../components/FooterComponent';
 
 import { fetchAssets } from '../actions/fetchAssets';
